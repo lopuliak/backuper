@@ -2,9 +2,6 @@
 
 /* format : an_rem-mach_ru.content.2016-03-10.7z */
 
-
-
-
 /* Конфиг */
 
 $config = array(
@@ -20,7 +17,6 @@ $config = array(
 	),
 		
 );
-
 
 /* Текущая дата */
 define("TODAY", date("Y-m-d"));
@@ -68,5 +64,5 @@ foreach ($file_list as $file_name){
 
 file_put_contents($_SERVER['DOCUMENT_ROOT']."/files_to_del.log","");
 file_put_contents($_SERVER['DOCUMENT_ROOT']."/files_to_del.log", print_r($file_list,true).PHP_EOL, FILE_APPEND); 
-?>
+
 
